@@ -8,14 +8,14 @@ Team Members: Jay Kishan Saw, Shreya Singh
 MindMate_Chatbot – An AI-Powered Mental Health Companion 💙
 Mental well-being is a crucial aspect of overall health, yet many individuals struggle to find the right support system. MindMate_Chatbot is an innovative and interactive AI-driven mental health assistant designed to provide emotional support, personalized self-care recommendations, and well-being resources.
 
-With an aesthetically appealing and dynamic interface, MindMate_Chatbot welcomes users into a calming digital environment. The chatbot, named Sukoon, offers a seamless and engaging experience, encouraging users to explore mindfulness techniques, stress-relief strategies, and relaxation exercises. The platform is designed to make mental health support more accessible, user-friendly, and interactive.
+With an aesthetically appealing and dynamic interface, MindMate_Chatbot welcomes users into a calming digital environment. The chatbot, named MINDMATE, offers a seamless and engaging experience, encouraging users to explore mindfulness techniques, stress-relief strategies, and relaxation exercises. The platform is designed to make mental health support more accessible, user-friendly, and interactive.
 
 Key Features:
 ✅ Immersive 3D & Animated Homepage
 The chatbot’s interface features an engaging and visually stunning landing page, complete with smooth animations and interactive elements. This immersive entry point helps create a tranquil digital space where users can feel at ease before beginning their journey toward emotional well-being.
 
 ✅ AI-Powered Chatbot for Emotional Support
-Sukoon, the AI-powered chatbot, is designed to provide empathetic and thoughtful interactions. It offers real-time emotional support, keeps track of user conversations, and delivers tailored responses based on individual needs. Sukoon ensures a personalized experience that fosters comfort and trust.
+MINDMATE, the AI-powered chatbot, is designed to provide empathetic and thoughtful interactions. It offers real-time emotional support, keeps track of user conversations, and delivers tailored responses based on individual needs. MINDMATE ensures a personalized experience that fosters comfort and trust.
 
 ✅ Full-Screen Chat Mode for an Immersive Experience
 To eliminate distractions and enhance focus, the chatbot opens in a dedicated full-screen mode. This feature allows users to engage in deeper and more meaningful conversations without external interruptions, ensuring a seamless interaction.
@@ -34,10 +34,10 @@ How It Works:
 Users are greeted with an interactive and animated homepage that sets a soothing tone. This landing page features carefully designed content, smooth transitions, and engaging visuals that promote relaxation and mental well-being.
 
 2️⃣ Click on “Chat Now” to Initiate a Session
-With a single click, users can launch the chatbot in full-screen mode, ensuring an uninterrupted and immersive experience. Sukoon is immediately available to provide guidance, listen to concerns, and engage in meaningful conversations.
+With a single click, users can launch the chatbot in full-screen mode, ensuring an uninterrupted and immersive experience. MINDMATE is immediately available to provide guidance, listen to concerns, and engage in meaningful conversations.
 
 3️⃣ Engage in a Supportive Conversation
-Once the chat begins, users can communicate with Sukoon through text or voice input. The chatbot actively listens, understands emotions, and responds with appropriate support, self-care tips, and well-being resources. Users can also explore additional mindfulness exercises, stress-relief techniques, and personalized recommendations.
+Once the chat begins, users can communicate with MINDMATE through text or voice input. The chatbot actively listens, understands emotions, and responds with appropriate support, self-care tips, and well-being resources. Users can also explore additional mindfulness exercises, stress-relief techniques, and personalized recommendations.
 
 Why Choose MindMate_Chatbot?
 🌟 Accessible & Non-Judgmental Support – MindMate_Chatbot is always available, providing an empathetic and private space where users can freely express their emotions.
