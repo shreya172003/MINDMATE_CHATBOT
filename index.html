@@ -1,0 +1,170 @@
+<!-- login page add --> 
+ <!-- mood tracker -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+     <!-- Login Button -->
+<div class="login-container">
+    <button class="login-btn" onclick="openLogin()">Login</button>
+</div>
+
+
+
+
+<!-- Login Modal -->
+<div id="login-modal" class="login-modal">
+    <div class="login-modal-content">
+        <span class="login-close-btn" onclick="closeLogin()">&times;</span>
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+    <div class="container">
+        <!-- Dark Mode Toggle -->
+        <div class="theme-toggle">
+            <label class="switch">
+                <input type="checkbox" id="theme-switch">
+                <span class="slider round"></span>
+            </label>
+            <p>Dark Mode</p>
+        </div>
+    <!-- Add FAQ Button in the top right corner -->
+<div class="top-right-buttons">
+    <button class="faq-btn" onclick="window.location.href='faq.html'">❓ FAQ</button>
+</div>
+    
+<style>
+/* Style for the FAQ Button */
+.top-right-buttons {
+    position: fixed;  /* Fixed to stay in the same spot */
+    bottom: 20px;    /* Moves it to the bottom */
+    right: 20px;     /* Moves it to the right */
+    display: flex;
+    gap: 10px;
+    z-index: 1000;   /* Ensures it stays above other content */
+}
+
+.faq-btn {
+    background: #17a2b8;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.faq-btn:hover {
+    background: #138496;
+    transform: scale(1.1);
+}
+</style>
+
+<!-- Chatbox -->
+        <div class="chat-container">
+            
+            <div class="chat-header">
+                <h2>MINDMATE AI</h2>
+            </div>
+            <div id="chat-box" class="chat-box">
+
+            </div>
+
+            <!-- Quick Replies -->
+            <div class="quick-replies">
+                <button onclick="sendQuickReply('I feel happy')">😊 Happy</button>
+                <button onclick="sendQuickReply('I feel sad')">😢 Sad</button>
+                <button onclick="sendQuickReply('I feel stressed')">😟 Stressed</button>
+                <button onclick="sendQuickReply('I feel tired')">😴 Tired</button>
+            </div>
+
+            <!-- Input Area -->
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
+
+                <button onclick="startVoiceInput()">🎤</button>
+                <button onclick="sendMessage()">Send</button>
+                  
+            </div>
+
+            <!-- Mood Tracker Button -->
+<button id="mood-tracker-btn" class="mood-tracker-btn">📊 Mood Tracker</button>
+
+<!-- Mood Tracker Modal -->
+<div id="mood-modal" class="login-modal">
+    <div class="login-modal-content">
+        <span class="login-close-btn" onclick="closeMoodTracker()">&times;</span>
+        <h2>Track Your Mood</h2>
+        
+        <label for="mood-select">How are you feeling today?</label>
+        <select id="mood-select">
+            <option value="happy">😊 Happy</option>
+            <option value="sad">😢 Sad</option>
+            <option value="stressed">😟 Stressed</option>
+            <option value="tired">😴 Tired</option>
+            <option value="anxious">😨 Anxious</option>
+        </select>
+
+        <label for="mood-note">Write a Note:</label>
+        <textarea id="mood-note" rows="3" placeholder="Describe your feelings..."></textarea>
+
+        <button onclick="saveMood()">Save Mood</button>
+
+        <h3>Past Mood Entries:</h3>
+        <ul id="mood-history"></ul>
+
+        <h3>💡 Self-Care Tip:</h3>
+        <p id="self-care-tip"></p>
+        <h3>📊 Mood Trends:</h3>
+        <!-- new mood trends -->
+    <canvas id="mood-chart"></canvas>
+
+
+        <h3>🔥 Streak: <span id="streak-counter">0</span> Days</h3>
+    </div>
+</div>
+            <script src="script.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <!-- Self-Care Tips -->
+            <button class="self-care-btn" onclick="window.location.href='selfcare.html'">💡 Self-Care Tips</button>
+            <button id="new-chat-btn" class="new-chat-btn">🆕 New Chat</button>
+
+            
+
+
+            <button class="styled-btn" onclick="openWebsite()">MINDMATE CHATBOT</button>
+
+            <script>
+                function openWebsite() {
+                    window.open("https://cdn.botpress.cloud/webchat/v2.2/shareable.html?configUrl=https://files.bpcontent.cloud/2025/02/08/21/20250208210812-H2UE0OJ5.json", "_blank");
+                }
+            </script>
+            
+
+
+
+
+        </div>
+    </div>
+</body>
+</html>

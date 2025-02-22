@@ -1,0 +1,481 @@
+.login-modal-content {
+    background-color: white;
+}
+
+
+/* Mood Tracker Modal Content */
+#mood-modal .login-modal-content {
+    background: rgba(255, 255, 255, 0.2); /* Transparent background */
+    backdrop-filter: blur(10px); /* Glass effect */
+    border-radius: 12px;
+    padding: 20px;
+    color: #030101; /* Change text color to white */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Mood Tracker Heading */
+#mood-modal h2, #mood-modal h3 {
+    color: #161402; /* Bright yellow for visibility */
+}
+
+/* Mood Tracker Labels */
+#mood-modal label {
+    color: #130101; /* White labels */
+    font-weight: bold;
+}
+
+/* Mood Dropdown and Text Input */
+#mood-select, #mood-note {
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent input */
+    color: #1c0707; /* White text */
+    border: 1px solid #fff; /* White border */
+}
+
+/* Placeholder Text */
+#mood-note::placeholder {
+    color: rgba(17, 2, 2, 0.7);
+}
+
+/* Mood History List */
+#mood-history {
+    list-style: none;
+    padding: 0;
+}
+
+/* Mood History Entries */
+#mood-history li {
+    background: rgba(0, 0, 0, 0.4); /* Dark transparent background */
+    color: #0a0901; /* Bright yellow text */
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px 0;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+/* Hover Effect for Mood Entries */
+#mood-history li:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mood Tracker Button */
+.mood-tracker-btn {
+    background: #673AB7;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 20px;
+    width: 100%;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.mood-tracker-btn:hover {
+    background: #5E35B1;
+}
+
+/* Mood History List */
+#mood-history {
+    list-style: none;
+    padding: 0;
+}
+
+#mood-history li {
+    background: #f4f4f4;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+
+
+
+
+/* Login Button Styling */
+.login-container {
+    position: fixed;
+    top: 20px; /* Adjust the distance from the top as needed */
+    right: 20px; /* Adjust the distance from the right as needed */
+    z-index: 1000;
+}
+
+.login-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Full-Screen Login Modal Styling */
+.login-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff6b6b, #ff6b6b, #f8e100, #00c6ff, #ff8f00);
+    background-size: 300% 300%;
+    animation: gradientBackground 10s ease infinite;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-modal-content {
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    animation: modalopen 0.3s;
+    transform: translateZ(0);
+    perspective: 1000px;
+}
+
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+        transform: translateY(-50%) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.login-close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.login-close-btn:hover,
+.login-close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Light Theme */
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 0.3s ease-in-out;
+}
+
+body {
+    background: url('waves.png') no-repeat center center/cover;
+}
+
+/* Dark Mode */
+body.dark {
+    background-color: #1e1e1e;
+}
+
+/* Chat Container */
+.chat-container {
+    width: 400px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+body.dark .chat-container {
+    background: #2c2c2c;
+}
+
+/* Chat Header */
+.chat-header {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+body.dark .chat-header {
+    color: #f4f4f4;
+}
+
+/* Chat Box */
+.chat-box {
+    height: 320px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 6px;
+    background: #fafafa;
+    text-align: left;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+}
+
+body.dark .chat-box {
+    background: #333;
+    border-color: #555;
+}
+
+/* Messages */
+.message {
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 75%;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.user-message {
+    background-color: #4CAF50;
+    color: white;
+    text-align: right;
+    margin-left: auto;
+}
+
+.bot-message {
+    background-color: #ddd;
+    color: #333;
+    text-align: left;
+}
+
+body.dark .bot-message {
+    background: #555;
+    color: white;
+}
+
+/* Input Area */
+.chat-input {
+    display: flex;
+    margin-top: 12px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s ease-in-out;
+}
+
+body.dark input {
+    background: #444;
+    color: white;
+    border-color: #777;
+}
+
+button {
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 6px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Quick Replies */
+.quick-replies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.quick-replies button {
+    background: #f8f9fa;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.quick-replies button:hover {
+    background: #007bff;
+    color: white;
+}
+
+/* Self-Care Tips Button */
+.self-care-btn {
+    background: #ff9800;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 20px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.self-care-btn:hover {
+    background: #e68900;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.theme-toggle p {
+    font-size: 14px;
+    color: #333;
+    margin-left: 10px;
+}
+
+body.dark .theme-toggle p {
+    color: white;
+}
+
+/* Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #4CAF50;
+}
+
+input:checked + .slider::before {
+    transform: translateX(14px);
+}
+.new-chat-btn {
+    background: #007bff;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 20px;
+    width: 100%;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.new-chat-btn:hover {
+    background: #0056b3;
+}
+
+
+
+.styled-btn {
+    background: #007bff;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 20px;
+    width: 100%;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.styled-btn:hover {
+    background: #0056b3;
+}
