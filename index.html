@@ -1,4 +1,4 @@
-<!-- login page add --> 
+<!-- login page add -->
 <!-- mood tracker -->
 
 <!DOCTYPE html>
@@ -48,7 +48,7 @@
       border-radius: 10px;
       padding: 10px;
       background-color: rgba(255, 255, 255, 0.85);
-      width: 350px;     
+      width: 350px;
       margin: 40px auto; /* Center horizontally with top spacing */
     }
 
@@ -204,10 +204,10 @@
 
       <!-- Quick Replies -->
       <div class="quick-replies">
-        <button onclick="sendQuickReply('I feel happy')">😀 Happy</button>
+        <button onclick="sendQuickReply('I feel happy')">😊 Happy</button>
         <button onclick="sendQuickReply('I feel sad')">😢 Sad</button>
         <button onclick="sendQuickReply('I feel stressed')">😰 Stressed</button>
-        <button onclick="sendQuickReply('I feel tired')">😴 Tired</button>
+        <button onclick="sendQuickReply('I feel tired')">😪 Tired</button>
       </div>
 
       <!-- Input Area -->
@@ -226,8 +226,8 @@
     <!-- Place all the bottom buttons in a fixed row at the bottom -->
     <div class="bottom-buttons">
       <button id="mood-tracker-btn" class="mood-tracker-btn">📝 Mood Tracker</button>
-      <button class="self-care-btn" onclick="window.location.href='selfcare.html'">💡 Self-Care Tips</button>
-      <button id="new-chat-btn" class="new-chat-btn">🆕 New Chat</button>
+      <button class="self-care-btn" onclick="window.location.href='selfcare.html'">🌱 Self-Care Tips</button>
+      <button id="new-chat-btn" class="new-chat-btn">💬 New Chat</button>
       <button class="styled-btn" onclick="openWebsite()">MINDMATE CHATBOT</button>
       <button class="faq-btn" onclick="window.location.href='faq.html'">❓ FAQ</button>
     </div>
@@ -240,10 +240,10 @@
         
         <label for="mood-select">How are you feeling today?</label>
         <select id="mood-select">
-          <option value="happy">😀 Happy</option>
+          <option value="happy">😊 Happy</option>
           <option value="sad">😢 Sad</option>
           <option value="stressed">😰 Stressed</option>
-          <option value="tired">😴 Tired</option>
+          <option value="tired">😪 Tired</option>
           <option value="anxious">😟 Anxious</option>
         </select>
 
@@ -255,10 +255,10 @@
         <h3>Past Mood Entries:</h3>
         <ul id="mood-history"></ul>
 
-        <h3>💡 Self-Care Tip:</h3>
+        <h3>🌱 Self-Care Tip:</h3>
         <p id="self-care-tip"></p>
 
-        <h3>📊 Mood Trends:</h3>
+        <h3>📈 Mood Trends:</h3>
         <canvas id="mood-chart"></canvas>
 
         <h3>🔥 Streak: <span id="streak-counter">0</span> Days</h3>

@@ -61,20 +61,6 @@
     transform: scale(1.05);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Mood Tracker Button */
 .mood-tracker-btn {
     background: #673AB7;
@@ -106,10 +92,6 @@
     margin: 5px 0;
     border-radius: 5px;
 }
-
-
-
-
 
 /* Login Button Styling */
 .login-container {
@@ -143,7 +125,8 @@
 .login-modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    /* Updated z-index to ensure modal is in front */
+    z-index: 9999;
     left: 0;
     top: 0;
     width: 100%;
@@ -199,7 +182,6 @@
     text-decoration: none;
     cursor: pointer;
 }
-
 
 /* Reset Styles */
 * {
@@ -442,6 +424,7 @@ input:checked + .slider {
 input:checked + .slider::before {
     transform: translateX(14px);
 }
+
 .new-chat-btn {
     background: #007bff;
     color: white;
@@ -459,8 +442,6 @@ input:checked + .slider::before {
 .new-chat-btn:hover {
     background: #0056b3;
 }
-
-
 
 .styled-btn {
     background: #007bff;
